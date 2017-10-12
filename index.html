@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Alarm Material UI</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="alarm-wrap">
+<div class="alarm">
+	<div class="top clearfix">
+		<div class="action pull-right">
+			<a href="#" class="mini"><span></span></a>
+			<a href="#" class="maxi"><span></span></a>
+			<a href="#" class="exit"><span></span></a>
+		</div>
+	</div>
+	<div class="slide-date">
+		<div class="alarm-prev"><span></span></div>
+		<div class="date">
+			<div class="dd">13</div>
+			<div class="mm-yy">OCt 2017</div>
+		</div>
+		<div class="alarm-next"><span></span></div>
+	</div>
+	<div class="day">Monday</div>
+	<input id="main-toggle" type="checkbox" class="tgl"><label for="main-toggle" class="toggle"></label>
+	<div class="alarm-content">
+		<div class="calendar-wrap">
+			<div class="calendar">
+			<div class="calendar-day">
+				<input class="tgl-dd" id="tgl-day-1" type="checkbox" checked><label class="tgl-day" for="tgl-day-1">SU</label>
+				<input class="tgl-dd" id="tgl-day-2" type="checkbox" checked><label class="tgl-day" for="tgl-day-2">MO</label>
+				<input class="tgl-dd" id="tgl-day-3" type="checkbox"><label class="tgl-day" for="tgl-day-3">TU</label>
+				<input class="tgl-dd" id="tgl-day-4" type="checkbox" checked><label class="tgl-day" for="tgl-day-4">WE</label>
+				<input class="tgl-dd" id="tgl-day-5" type="checkbox"><label class="tgl-day" for="tgl-day-5">TH</label>
+				<input class="tgl-dd" id="tgl-day-6" type="checkbox"><label class="tgl-day" for="tgl-day-6">FR</label>
+				<input class="tgl-dd" id="tgl-day-7" type="checkbox"><label class="tgl-day" for="tgl-day-7">SA</label>
+			</div>
+			<div class="calendar-time">
+				<div class="time-hh">
+					<div class="text">H</div>
+					<select>
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+						<option>05</option>
+						<option>06</option>
+						<option>07</option>
+						<option>08</option>
+						<option>09</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+					</select>
+				</div>
+				<div class="time-mm">
+					<div class="text">M</div>
+					<select>
+						<option>10</option>
+						<option>20</option>
+						<option selected>30</option>
+						<option>40</option>
+						<option>50</option>
+						<option>60</option>
+					</select>
+				</div>
+				<div class="time-ss">
+					<div class="text">S</div>
+					<select>
+						<option>00</option>
+						<option>10</option>
+						<option>20</option>
+						<option>30</option>
+						<option>40</option>
+						<option>50</option>
+						<option>60</option>
+					</select>
+				</div>
+			</div>
+			<div class="calendar-action clearfix">
+				<div class="button"><button class="btn btn-default pull-left" onclick="sendMessage('begin')">Begin</button></div>
+				<div class="button"><label for="main-toggle" class="btn btn-danger pull-right">Cancel</label></div>
+			</div>
+			</div>
+		</div>
+		<div class="alarm-ul">
+			<div class="alarm-li">
+			<input id="alarm-1" type="checkbox" class="on-off" checked>
+			<div class="alarm-list-inf clearfix">
+				<div class="pull-left">
+					<span class="alarm-bell"></span>
+				</div>
+				<div class="pull-left">
+					<div class="alarm-info">
+						<div class="alarm-time">06:30</div>
+						<div class="alarm-repeat">
+							<span class="active">SU</span>
+							<span>MO</span>
+							<span class="active">TU</span>
+							<span class="active">WE</span>
+							<span>TH</span>
+							<span class="active">FR</span>
+							<span class="active">SA</span>
+						</div>
+					</div>
+				</div>
+				<div class="pull-right">
+					<label class="alarm-toggle" for="alarm-1"></label>
+				</div>
+			</div>
+			</div>
+			<div class="alarm-li">
+			<input id="alarm-2" type="checkbox" class="on-off">
+			<div class="alarm-list-inf clearfix">
+				<div class="pull-left">
+					<span class="alarm-bell"></span>
+				</div>
+				<div class="pull-left">
+					<div class="alarm-info">
+						<div class="alarm-time">09:30</div>
+						<div class="alarm-repeat">
+							<span>SU</span>
+							<span>MO</span>
+							<span>TU</span>
+							<span class="active">WE</span>
+							<span>TH</span>
+							<span>FR</span>
+							<span>SA</span>
+						</div>
+					</div>
+				</div>
+				<div class="pull-right">
+					<label class="alarm-toggle" for="alarm-2"></label>
+				</div>
+			</div>
+			</div>
+			<div class="alarm-li">
+			<input id="alarm-3" type="checkbox" class="on-off" checked>
+			<div class="alarm-list-inf clearfix">
+				<div class="pull-left">
+					<span class="alarm-bell"></span>
+				</div>
+				<div class="pull-left">
+					<div class="alarm-info">
+						<div class="alarm-time">15:30</div>
+						<div class="alarm-repeat">
+							<span class="active">SU</span>
+							<span>MO</span>
+							<span>TU</span>
+							<span>WE</span>
+							<span>TH</span>
+							<span>FR</span>
+							<span>SA</span>
+						</div>
+					</div>
+				</div>
+				<div class="pull-right">
+					<label class="alarm-toggle" for="alarm-3"></label>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+  
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.js"></script>
+<script type="text/javascript" src="https://github.com/adafruit/io-issues/releases/download/mqttjs/mqtt.js"></script>
+	<script src="./index.js"></script>
+</body>
+</html>
